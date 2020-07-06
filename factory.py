@@ -4197,7 +4197,7 @@ def exceptHook(type_, value, traceback_):  # Req to return error traceback on Py
 # -------- Main App -------- #
 
 if __name__ == '__main__':  # Run if main program, but not if imported this from elsewhere
-    sys.excepthook = exceptHook  # Req to return error traceback on PyQt 5.5 including sig/slots
+    sys.excepthook = exceptHook  # Req to return error traceback on PyQt 5.5 including sig / slots
     app = QtWidgets.QApplication(sys.argv)
     mainApp = clsMainApp()
     mainApp.finishSetup()
